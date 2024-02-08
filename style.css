@@ -18,12 +18,17 @@ h1 {
 
 .left {
   float: left;
-  background-color: blue;
+  display: inline;
 }
 
 .right {
   float: right;
-  background-color: red;
+  display: inline;
+}
+
+body > div.main > div.left.card > img, 
+body > div.main > div.right.card > img {
+  margin-right: 20px;
 }
 
 img {
@@ -43,4 +48,59 @@ footer p {
 
 span {
   color: midnightblue;
+}
+
+@media screen and (max-width: 1514px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  body > div.main > div.right.card {
+    float: inline-start;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  h1 {
+    width: 500px;
+  }
+
+  .left {
+   float: none;
+  }
+  
+  .right {
+    float: none;
+  }
+  
+  body > div.main > div.left.card > img, 
+  body > div.main > div.right.card > img {
+    margin-right: 20px;
+  }
+  
+  img {
+    float: none;
+    width: 500px;
+  }
+
+  body > div.main > div.right.card {
+    float: none;    
+  }
+
+  .card {
+    margin-top: 100px;
+    width: 700px;
+  }
+  
+  footer p {
+    float: right;
+    color: midnightblue;
+  }
+  
+  span {
+    color: midnightblue;
+  }
+
 }
