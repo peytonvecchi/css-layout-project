@@ -51,9 +51,6 @@ span {
 }
 
 @media screen and (max-width: 1514px) {
-  body {
-    background-color: lightgreen;
-  }
 
   body > div.main > div.right.card {
     float: inline-start;
